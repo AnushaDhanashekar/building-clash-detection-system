@@ -1,0 +1,22 @@
+# IDE & Editor
+.vscode/
+.idea/
+
+# Python & Node environments
+__pycache__/
+node_modules/
+venv/
+.venv/
+
+
+.cdk.staging
+cdk.out
+
+
+# Logs and temp files
+*.log
+*.log.*
+
+# Untracked scripts & generated files
+test.py
+test.sh
