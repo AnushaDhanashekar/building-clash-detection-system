@@ -61,7 +61,7 @@ class BuildingClashesStack(Stack):
 
         # POST method to submit a new task
         submit_task_integration = apigateway.LambdaIntegration(self.building_clash_docker_lambda)
-        api.root.add_resource("submit").add_method("POST", submit_task_integration)
+        api.root.add_resource("detect-clash").add_method("POST", submit_task_integration)
 
         # Output the API endpoint URL
         CfnOutput(self, "ApiUrl", value=api.url)
